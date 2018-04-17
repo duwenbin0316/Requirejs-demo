@@ -1,0 +1,43 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+}
+
+#main > .left{
+    width: 300px;
+    height: 100%;
+    background: #313D69;
+    float: left;
+}
+
+#main > .right{
+    width: calc(100% - 300px);
+    height: 100%;
+    float: left;
+}
+
+#main::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#header{
+    height: 60px;
+    background: #eeeeee;
+    overflow: hidden;
+}
+
+#content{
+    height: calc(100% - 110px);
+}
+
+#footer{
+    height: 50px;
+    background: #eeeeee;
+}
